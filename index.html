@@ -81,11 +81,14 @@ footer{
     height: 12rem;
     background-color: #519C94;
 }
-footer{
+/* footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+} */
+.footer{
+   background-color:#519C94;
 }
 .linkedin{
 text-decoration: none;
@@ -112,6 +115,10 @@ text-decoration: none;
 }
 .profile{
     margin-left : 0px;
+}
+li:hover{
+background-color: white;
+border-radius: 5px;
 }
 .sabiqvip:hover{ background-color:#4f7571;
     width: 430px;
@@ -341,8 +348,8 @@ margin-top: 55rem;
           Be it freelance, employment, game dev, anything !
         </p>
         <div class="d-inline-flex gap-2 mb-5">
-          <a href="mailto:thom.lebel@gmail.com">
-          <button class="d-inline-flex align-items-center btn btn-outline-dark btn-lg px-4 rounded-3" type="button">
+          <a href="mailto:sabiqvip@gmail.com">
+          <button class=" button d-inline-flex align-items-center btn btn-outline-dark btn-lg px-4 rounded-3" type="button">
             contact me
           </button>
           </a>
@@ -361,10 +368,29 @@ margin-top: 55rem;
         </div>
     </div>
   </section> -->
-  <footer>
+  <section class="footer">
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center pt-3 mt-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+          <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+        <span class="mb-3 mb-md-0 text-body-secondary">Thank You</span>
+      </div>
+  
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-body-secondary" target="_blank" href="https://www.linkedin.com/in/mohammed-sabiq-a-9840a228b/?trk=public-profile-join-page"> <img class="" width="24" height="24" src="./svgc/linkedin.svg"/></a></li>
+        <li class="ms-3"><a class="text-body-secondary" target="_blank" href="https://www.instagram.com/sabiq_vip/"><img class="" width="24" height="24" src="./svgc/instagram.svg"/></a></li>
+
+        <li class="ms-3"><a class="text-body-secondary"target="_blank"  href="#"> <img class="" width="24" height="24" src="./svgc/file-earmark-person.svg"/></a></li>
+      </ul>
+    </footer>
+  </div>
+</section>
+  <!-- <footer>
     <a href="https://www.linkedin.com/in/mohammed-sabiq-a-9840a228b/?trk=public-profile-join-page" class="linkedin">Linkedin</a>
    
-  </footer>
+  </footer> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
